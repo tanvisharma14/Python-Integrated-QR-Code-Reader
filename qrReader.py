@@ -11,4 +11,5 @@ img = Image.open("myQr.png")
 result = decode(img)
 
 # print content from qr
-print(result[0].data.decode())
+print(result[0].data.decode())  # result[0] -> img, .data -> to access result's data/return binary or encoded,
+                                # .decode -> converts data into string
